@@ -102,6 +102,12 @@ source $ZSH/oh-my-zsh.sh
 # Alias
 alias ls='ls -v' 
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias uba='cd "$HOME/Library/Mobile Documents/com~apple~CloudDocs/uba/"'
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  alias uba='cd "$HOME/uba"'
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
