@@ -108,9 +108,9 @@ alias ls='ls -v'
 export PATH="/usr/local/bin:$PATH"
 
 # GHCup - Haskell
-[ -f "~/.ghcup/env" ] && . "~/.ghcup/env" # ghcup-env
-# [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env" # ghcup-env
-# ghcup-envsource
+if [[ -f "$HOME/.ghcup/env" ]]; then
+  source "$HOME/.ghcup/env"
+fi
 
 # zsh-autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
