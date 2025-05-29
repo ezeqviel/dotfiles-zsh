@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # Alias
-alias ls='ls -v' 
+alias ls='ls -v --color=auto' 
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias uba='cd "$HOME/Library/Mobile Documents/com~apple~CloudDocs/uba/"'
